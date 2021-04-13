@@ -1,0 +1,88 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "My Not allowed resource types",
+  "policyDefinitionId": "/subscriptions/973befb1-3db1-46ad-8c39-697ac39bc53c/providers/Microsoft.Authorization/policyDefinitions/45b16969-958c-465d-bb3a-40a9c05e4c0c",
+  "scope": "/subscriptions/973befb1-3db1-46ad-8c39-697ac39bc53c",
+  "notScopes": [],
+  "parameters": {
+   "listOfResourceTypesNotAllowed": {
+    "value": [
+     "84codes.cloudamqp/listcommunicationpreference",
+     "84codes.cloudamqp/operations",
+     "84codes.cloudamqp/servers",
+     "84codes.cloudamqp/updatecommunicationpreference",
+     "livearena.broadcast/listcommunicationpreference",
+     "livearena.broadcast/operations",
+     "livearena.broadcast/services",
+     "livearena.broadcast/updatecommunicationpreference",
+     "mailjet.email/listcommunicationpreference",
+     "mailjet.email/operations",
+     "mailjet.email/services",
+     "mailjet.email/updatecommunicationpreference",
+     "microsoft.aad/domainservices",
+     "microsoft.aad/domainservices/oucontainer",
+     "microsoft.aad/locations",
+     "microsoft.aad/locations/operationresults",
+     "microsoft.aad/operations",
+     "microsoft.aadiam/azureadmetrics",
+     "microsoft.aadiam/diagnosticsettings",
+     "microsoft.aadiam/diagnosticsettingscategories",
+     "microsoft.aadiam/operations",
+     "microsoft.aadiam/privatelinkforazuread",
+     "microsoft.aadiam/tenants",
+     "microsoft.addons/operationresults",
+     "microsoft.addons/operations",
+     "microsoft.addons/supportproviders",
+     "microsoft.adhybridhealthservice/aadsupportcases",
+     "microsoft.adhybridhealthservice/addsservices",
+     "microsoft.adhybridhealthservice/agents",
+     "microsoft.adhybridhealthservice/anonymousapiusers",
+     "microsoft.adhybridhealthservice/configuration",
+     "microsoft.adhybridhealthservice/logs",
+     "microsoft.adhybridhealthservice/operations",
+     "microsoft.adhybridhealthservice/reports",
+     "microsoft.adhybridhealthservice/servicehealthmetrics",
+     "microsoft.adhybridhealthservice/services",
+     "microsoft.advisor/advisorscore",
+     "microsoft.advisor/configurations",
+     "microsoft.advisor/generaterecommendations",
+     "microsoft.advisor/metadata",
+     "microsoft.advisor/operations",
+     "microsoft.advisor/recommendations",
+     "microsoft.advisor/suppressions",
+     "microsoft.agfoodplatform/operations",
+     "microsoft.agfoodplatform/checknameavailability",
+     "microsoft.agfoodplatform/farmbeats",
+     "microsoft.agfoodplatform/farmbeats/eventgridfilters",
+     "microsoft.aisupercomputer/accounts",
+     "microsoft.aisupercomputer/accounts/accountquotapolicies",
+     "microsoft.aisupercomputer/accounts/grouppolicies",
+     "microsoft.aisupercomputer/accounts/jobs",
+     "microsoft.aisupercomputer/accounts/storagecontainers",
+     "microsoft.aisupercomputer/images",
+     "microsoft.aisupercomputer/locations",
+     "microsoft.aisupercomputer/locations/instancetypeseries",
+     "microsoft.aisupercomputer/locations/instancetypeseries/instancetypes"
+    ]
+   }
+  },
+  "metadata": {
+   "assignedBy": "Federico Maestà",
+   "parameterScopes": {
+    "listOfResourceTypesNotAllowed": "/subscriptions/973befb1-3db1-46ad-8c39-697ac39bc53c"
+   },
+   "createdBy": "7f8c076a-c0d9-4be3-b102-af74e3906d3f",
+   "createdOn": "2021-04-13T14:10:07.2617585Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/973befb1-3db1-46ad-8c39-697ac39bc53c/providers/Microsoft.Authorization/policyAssignments/0732aca68a7845a09ce085eb",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "0732aca68a7845a09ce085eb"
+}

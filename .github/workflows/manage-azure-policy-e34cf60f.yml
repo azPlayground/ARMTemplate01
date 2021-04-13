@@ -1,0 +1,32 @@
+name: manage-azure-policy-e34cf60f
+on:
+  workflow_dispatch:
+    inputs:
+      remarks:
+        description: 'Reason for triggering the workflow run'
+        required: false
+        default: 'Updating Azure Policies'
+
+
+## Uncomment the following if you wish to automatically trigger workflow run with every commit
+#
+#  push:
+#    paths:
+#      - 'Policy/teST/policies/My_Not_allowed_resource_types_45b16969-958c-465d-bb3a-40a9c05e4c0c/**'
+#      - .github/workflows/manage-azure-policy-e34cf60f.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_e34cf60f}}
+        allow-no-subscriptions: true
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          Policy/teST/policies/My_Not_allowed_resource_types_45b16969-958c-465d-bb3a-40a9c05e4c0c/**

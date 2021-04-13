@@ -1,0 +1,58 @@
+{
+ "properties": {
+  "displayName": "My Not allowed resource types",
+  "policyType": "Custom",
+  "mode": "All",
+  "description": "Restrict which resource types can be deployed in your environment. Limiting resource types can reduce the complexity and attack surface of your environment while also helping to manage costs. Compliance results are only shown for non-compliant resources.",
+  "metadata": {
+   "category": "General",
+   "createdBy": "7f8c076a-c0d9-4be3-b102-af74e3906d3f",
+   "createdOn": "2021-04-13T14:07:56.3447126Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "listOfResourceTypesNotAllowed": {
+    "type": "Array",
+    "metadata": {
+     "displayName": "Not allowed resource types",
+     "description": "The list of resource types that cannot be deployed.",
+     "strongType": "resourceTypes"
+    }
+   },
+   "effect": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Effect",
+     "description": "Enable or disable the execution of the policy"
+    },
+    "allowedValues": [
+     "Audit",
+     "Deny",
+     "Disabled"
+    ],
+    "defaultValue": "Deny"
+   }
+  },
+  "policyRule": {
+   "if": {
+    "allOf": [
+     {
+      "field": "type",
+      "in": "[parameters('listOfResourceTypesNotAllowed')]"
+     },
+     {
+      "value": "[field('type')]",
+      "exists": true
+     }
+    ]
+   },
+   "then": {
+    "effect": "[parameters('effect')]"
+   }
+  }
+ },
+ "id": "/subscriptions/973befb1-3db1-46ad-8c39-697ac39bc53c/providers/Microsoft.Authorization/policyDefinitions/45b16969-958c-465d-bb3a-40a9c05e4c0c",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "45b16969-958c-465d-bb3a-40a9c05e4c0c"
+}
