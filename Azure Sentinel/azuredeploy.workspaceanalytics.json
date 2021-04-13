@@ -69,24 +69,6 @@
                 },
                 "retentionInDays": "[parameters('dataRetention')]"
             }
-        },
-        {
-            "type": "Microsoft.OperationsManagement/solutions",
-            "apiVersion": "2015-11-01-preview",
-            "name": "[variables('azureSentinelSolutionName')]",
-            "location": "[parameters('location')]",
-            "plan": {
-                "name": "[variables('azureSentinelSolutionName')]",
-                "promotionCode": "",
-                "product": "[variables('product')]",
-                "publisher": "[variables('publisher')]"
-            },
-            "dependsOn": [
-                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'))]"
-            ],
-            "properties": {
-                "workspaceResourceId": "[resourceId('Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'))]"
-            }
         }
     ]
 }

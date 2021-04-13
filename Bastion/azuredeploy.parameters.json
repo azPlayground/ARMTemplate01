@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "bastion-host-name": {
-          "value": "GEN-UNIQUE-8"
+          "value": "bast-shared-prod-we-001"
         },
         "vnet-name": {
             "value": "vnet-shared-prod-we-001"
