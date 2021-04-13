@@ -11,10 +11,10 @@
   "parameters": {
    "listOfResourceTypesNotAllowed": {
     "value": [
-     "84codes.cloudamqp/listcommunicationpreference",
-     "livearena.broadcast/listcommunicationpreference",
-     "mailjet.email/listcommunicationpreference",
-     "microsoft.aad/domainservices"
+     "84codes.*",
+     "livearena.*",
+     "mailjet.*",
+     "microsoft.*"
     ]
    }
   },
