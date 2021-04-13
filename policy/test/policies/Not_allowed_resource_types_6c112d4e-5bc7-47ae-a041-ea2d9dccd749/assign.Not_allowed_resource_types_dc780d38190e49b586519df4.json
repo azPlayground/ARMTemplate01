@@ -1,0 +1,36 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "Not allowed resource types",
+  "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6c112d4e-5bc7-47ae-a041-ea2d9dccd749",
+  "scope": "/subscriptions/973befb1-3db1-46ad-8c39-697ac39bc53c",
+  "notScopes": [],
+  "parameters": {
+   "listOfResourceTypesNotAllowed": {
+    "value": [
+     "84codes.cloudamqp/listcommunicationpreference",
+     "livearena.broadcast/listcommunicationpreference",
+     "mailjet.email/listcommunicationpreference",
+     "microsoft.aad/domainservices"
+    ]
+   }
+  },
+  "metadata": {
+   "assignedBy": "Federico Maestà",
+   "parameterScopes": {
+    "listOfResourceTypesNotAllowed": "/subscriptions/973befb1-3db1-46ad-8c39-697ac39bc53c"
+   },
+   "createdBy": "7f8c076a-c0d9-4be3-b102-af74e3906d3f",
+   "createdOn": "2021-04-13T15:56:01.2801128Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/973befb1-3db1-46ad-8c39-697ac39bc53c/providers/Microsoft.Authorization/policyAssignments/dc780d38190e49b586519df4",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "dc780d38190e49b586519df4"
+}
