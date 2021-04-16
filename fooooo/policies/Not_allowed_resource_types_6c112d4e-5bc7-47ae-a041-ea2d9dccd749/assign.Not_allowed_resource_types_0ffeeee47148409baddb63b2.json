@@ -11,9 +11,8 @@
   "parameters": {
    "listOfResourceTypesNotAllowed": {
     "value": [
-     "microsoft.aad/domainservices",
-     "microsoft.aad/domainservices/oucontainer",
-     "microsoft.aad/locations"
+     "microsoft.aad/*",
+     "microsoft.aadiam/*"
     ]
    }
   },
